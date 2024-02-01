@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Greeter</title>
+    <style>
+      *{font-size:1.5em;}
+    </style>
+  </head>
+<body>
+  <button>Click Me!</button>
+  <input id="input-firstname" placeholder="Type in your name">
+  <p id="output">???</p>
+</body>
+<script>
+    "use strict";
+
+    // 1 - get a reference to the button
+    let button = document.querySelector("button");
+
+    // 2 - add a click event to button that calls a `sayHello` function
+    button.addEventListener("click",sayHello);
+
+    // 3 - create a `sayHello()` function
+    function sayHello(){
+        // 3A - get name of person from the <input>
+        let firstName = document.querySelector("#input-firstname").value;
+        // 3B - get a reference to the #output <p>
+        let output = document.querySelector("#output");
+        // 3C - update HTML of #output <p>
+        output.innerHTML = "Hello " + firstName;
+    }
+    
+    </script>
+</html>
