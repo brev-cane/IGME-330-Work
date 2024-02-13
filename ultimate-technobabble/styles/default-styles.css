@@ -1,0 +1,112 @@
+body {
+    font-family: monospace;
+}
+
+#output {
+    font-size: 200%;
+    padding: 20px 5px;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    font-size: 15pt;
+}
+
+#five-button {
+    display: none;
+}
+
+/* Phone media query */
+@media only screen and (min-width: 320px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    html, body, .container {
+        height: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        background-color: #174287;
+        color: #F5F5F5;
+        padding: .8rem;
+        margin: 0;
+        text-align: center;
+        /* Added my embedded font */
+        font-family: "Kanit", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    #output{
+        text-align: center;
+    }
+}
+
+/* Tablet media query */
+@media only screen and (min-width:768px) {
+    h1 {
+        font-size: 3rem;
+        background-color: #23D160;
+    }
+
+    #my-button {
+        width: 300px;
+        height: 75pt;
+        font-size: 1.5rem;
+    }
+
+    body {
+        color: darkgray;
+        font-size: 2rem;
+    }
+}
+
+/* Desktop/Large tablet media query */
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    h1 {
+        background-color: #FF3860;
+    }
+
+    .container {
+        display: block;
+        margin: 1rem;
+    }
+
+    #output{
+        text-align: left;
+    }
+}
+
+/* fullhd resolution media query */
+@media only screen and (min-width: 1408px) {
+    h1 {
+        font-size: 4rem;
+        padding: 30px;
+    }
+    
+    #my-button, #five-button {
+        width: 450px;
+        height: 100pt;
+        font-size: 2rem;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    #five-button {
+        display: inline;
+    }
+}
