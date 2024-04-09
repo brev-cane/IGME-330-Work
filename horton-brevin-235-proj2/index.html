@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Climates</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Country <br> Climates</h1>
+    </header>
+
+    <div class="container">
+        <div id="search">     
+            <input type="text" id="countryInput" placeholder="Enter a country...">
+            <div id="widget-container">
+                <div id="button-container">
+                    <button id="toggleUnits">Toggle Units</button>
+                    <button id="viewHome">Home Country</button>
+                </div>
+                <select id="sort">
+                    <option value="asc">(A-Z)</option>
+                    <option value="desc">(Z-A)</option>
+                </select>
+            </div>
+        </div>
+        <div id="loadingContainer"><img src="images/loading-earth.gif" alt="Spinning earth"></div>
+        <div id="weatherResult"></div>
+    </div>
+
+    <footer>
+            <div id="footer-div">
+                <h3>Other Links</h3>
+                <ul>
+                    <li><a href="doc.html">doc.html</a></li>
+                </ul>
+            </div> 
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
